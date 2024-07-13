@@ -40,3 +40,22 @@ body {
   align-items: center; /* Alinha ícone ao centro verticalmente */
   margin-left: 20px; /* Espaçamento à esquerda */
 }
+
+.theme-switcher button {
+  margin-top: 10px;
+  background-color: #1e1e1e; /* Cor de fundo lilás */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado padrão */
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.8s; /* Duração da transição */
+  cursor: pointer; /* Mostra o cursor como ponteiro ao passar por cima */
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(17, 17, 17, 0.875);
+  &:hover {
+    background-color: #3d3d3d; /* Cor de fundo lilás mais escura ao passar o mouse */
+  }
+}
