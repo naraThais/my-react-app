@@ -1,13 +1,42 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif; /* Usa a fonte Inter */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(circle at top left, #EBEBEB, #FFFFFF);
+  margin: 0;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Garante altura mínima da viewport */
+}
+
+.content {
+  display: flex;
+  align-items: center; /* Alinha itens ao centro verticalmente */
+}
+
+.text-container {
+  display: block; /* Torna os parágrafos em linha */
+  align-items: center; /* Alinha itens ao centro verticalmente */
+  margin-right: 20px; /* Espaçamento à direita */
+}
+
+.text-container p {
+  font-size: 56px; /* Ajuste o tamanho do texto para 36px */
+  margin: 0; /* Remove margens */
+  color: #313131;
+  font-style: bold;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center; /* Alinha ícone ao centro verticalmente */
+  margin-left: 20px; /* Espaçamento à esquerda */
 }

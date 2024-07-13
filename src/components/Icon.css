@@ -1,0 +1,20 @@
+/* src/components/Icon.css */
+.icons-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente ao centro */
+    gap: 60px; /* Espaçamento de 60px entre o ícone e o texto */
+  }
+  
+  .iconI-container,
+  .iconT-container {
+    display: flex;
+    align-items: center; /* Centraliza os ícones verticalmente */
+  }
+  
+  .iconI-image,
+  .iconT-image {
+    width: 232px; /* Ajuste o tamanho do ícone */
+    height: 232px; /* Ajuste o tamanho do ícone */
+  }
+  
