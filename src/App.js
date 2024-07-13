@@ -24,7 +24,7 @@ const App = () => {
           </strong>
           <div className="theme-switcher">
           <button className="theme-button" onClick={handleThemeChange}>
-            Mudar para {theme === 'light' ? 'Tema Escuro' : 'Tema Claro'}
+           {theme === 'light' ? 'Dark Theme' : 'Light Theme'}
           </button>
         </div>
         </div>
