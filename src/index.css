@@ -5,9 +5,17 @@ body {
   font-family: 'Inter', sans-serif; /* Usa a fonte Inter */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(circle at top left, #EBEBEB, #FFFFFF);
   margin: 0;
   padding: 0;
+}
+.dark-theme {
+  background: radial-gradient(circle at top left, #363636, #000000);
+  color: #fff; /* Texto claro */
+}
+
+.light-theme {
+  background: radial-gradient(circle at top left, #EBEBEB, #FFFFFF);
+  color: #313131;
 }
 
 .main-container {
@@ -31,7 +39,6 @@ body {
 .text-container p {
   font-size: 56px; /* Ajuste o tamanho do texto para 36px */
   margin: 0; /* Remove margens */
-  color: #313131;
   font-style: bold;
 }
 
@@ -56,6 +63,28 @@ body {
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(17, 17, 17, 0.875);
   &:hover {
-    background-color: #3d3d3d; /* Cor de fundo lilás mais escura ao passar o mouse */
+    background-color: #914EBF; /* Cor de fundo para tema escuro */
+  color: #ffffff; /* Cor do texto para tema escuro */
   }
+}
+
+.dark-theme .theme-switcher button {
+  margin-top: 10px;
+  background-color: #914EBF; /* Cor de fundo para tema escuro */
+  color: #ffffff; /* Cor do texto para tema escuro */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Alinhamento do texto */
+  text-decoration: none; /* Remove sublinhado padrão */
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.8s; /* Duração da transição */
+  cursor: pointer; /* Mostra o cursor como ponteiro ao passar por cima */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 3px 3px 8px rgba(17, 17, 17, 0.875); /* Sombra */
+}
+
+.dark-theme .theme-switcher button:hover {
+  background-color: #1e1e1e; /* Cor de fundo mais escura ao passar o mouse */
+  color: white;
 }

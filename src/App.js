@@ -1,17 +1,20 @@
-import React from 'react';
-import './index.css';
-import './components/Icon.css';
+import React, { useState } from 'react';
+import './index.css'; // Importa o arquivo de estilos
+import './components/Icon.css'; // Importa os estilos do ícone
 import Icon from './components/Icons';
 
-
 const App = () => {
+  const [theme, setTheme] = useState('light'); // Estado inicial do tema
+
   const handleThemeChange = () => {
-    // Lógica para mudar o tema aqui
-    console.log('Mudar para tema escuro');
+    // Lógica para mudar o tema
+    const newTheme = theme === 'light' ? 'dark' : 'light'; // Alternar entre light e dark
+    setTheme(newTheme); // Atualiza o estado do tema
+    console.log(`Mudar para tema ${newTheme}`);
   };
 
   return (
-    <div className="main-container">
+    <div className={`main-container ${theme === 'dark' ? 'dark-theme' : ''}`}>
       <div className="content">
         <div className="text-container">
           <strong>
@@ -20,7 +23,9 @@ const App = () => {
             <p>3D Icons</p>
           </strong>
           <div className="theme-switcher">
-          <button className="theme-button" onClick={handleThemeChange}>Mudar Tema</button>
+          <button className="theme-button" onClick={handleThemeChange}>
+            Mudar para {theme === 'light' ? 'Tema Escuro' : 'Tema Claro'}
+          </button>
         </div>
         </div>
         <div className="icon-container">
@@ -31,4 +36,4 @@ const App = () => {
   );
 };
 
-export default App; // Exporta o componente App como padrão
+export default App;
